@@ -1,0 +1,605 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/*---------------------- navbar ----------------------*/
+.body{
+    width:100%;
+    height:100vh;
+    
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    position:fixed;
+    top:0px;
+    width:100%;
+}
+nav h1{
+    font-size:38px;
+}
+.links{
+    display: flex;;
+    background-color: rgb(253, 250, 250);
+    border-radius:50px;
+    padding:10px 10px;
+    width:33%;
+    justify-content: center;
+    align-items:center;
+    box-shadow:0px  0px 10px purple;
+}
+.links a{
+    text-decoration:none;
+    margin:0px 11px;
+    color: rgb(44, 16, 138);
+    font-weight: 700;
+}
+.modes{
+    
+    height:53px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width:15%;
+    padding:0px 5px;
+    
+
+
+}
+
+.modes a{
+    border: 1px solid black;
+    width:130px;
+    height:30px;
+    border-radius:50px;
+    text-decoration  : none;
+    display:flex;
+    
+    justify-content:center;
+    align-items:center;
+    color:rgb(32, 6, 68);
+    
+}
+.modes i{
+    font-size:20px;
+    color:purple;
+}
+
+.modes a i{
+    margin-left:10px
+}
+.modes #bars{
+    font-size:30px;
+    display:none;
+}
+/*--------------------Sidebar ------------------------*/
+.sbar{
+    width:0px;
+    opacity: 0;
+    height:90vh;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
+    background:linear-gradient(to bottom,plum , purple);
+    padding:20px 10px;
+}
+.sbar i{
+    font-size:30px;
+    margin-bottom:20px;
+}
+.slinks{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.slinks a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size:19px;
+    text-shadow: 0px 0px 10px whitesmoke;
+}
+
+/*------------------ Home -------------------*/
+.home{
+
+    gap:10px;
+    text-align:center;
+    width:100%;
+    margin-top:100px;
+    padding:0px 10px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.home .img{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('images/profile.jpg');
+}
+.home .txt{
+    color:rgb(201, 119, 201);
+}
+.home-btn{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:25px;
+
+}
+.home-btn a {
+    color:whitesmoke;
+    text-shadow:0px 0px 10px whitesmoke;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(to right,rgb(240, 132, 208),rgb(255, 55, 0));
+}
+.h-btn  i{
+    margin:  0px 4px;
+
+}
+
+.h-btn{
+    width:200px;
+    height:40px;
+    border-radius:50px;
+    border:none;
+    outline:none;
+    margin:0px 10px;
+}
+/*----------------------------- about -------------------------*/
+.about{
+    margin-top:100px;
+    text-align:center;
+    gap:10px;
+    color:rgb(201, 119, 201);
+
+}
+.abt{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:30px;
+    flex-wrap: wrap;
+
+}
+#a{
+    height:400px;
+    margin:0px 17px;
+}
+.labt{
+    width:300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/profile2.avif');
+    border-radius:14px;
+}
+.rabt{
+    background-color: transparent;
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    padding-top:10px;
+    gap:10px;
+}
+.rabt p{
+    height:100px;
+}
+.rcontainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:15px;
+    height:215px;
+    width:100%;
+    height:400px;
+    
+}
+#r{
+    margin:0px 15px;
+}
+
+.rbox1{
+    box-shadow:0px 0px 10px rgba(72, 70, 70, 0.489);
+    width:40vmin;
+    height:40vmin;
+    border-radius:12px;
+    transition:0.5s;
+    background-color: transparent;
+    border: 1px solid white ;
+
+    
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align:left;
+    padding-left:10px;
+    gap:20px;
+}
+.rbox1:hover{
+    transform: translate(-5px,-5px)
+    
+}
+.rbox1:hover .rbox{
+    border:none;
+}
+
+/*------------------------ services -------------------*/
+.services{
+    color:rgb(201, 119, 201);
+    margin-top:70px;
+    text-align:center;
+    gap:10px;
+    margin-bottom:50px;
+}
+.services h1{
+    margin:8px 0px;
+}
+.scontainer{
+    text-align:left;
+    width:100%;
+    height:350px;
+    margin:40px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.6s;
+}
+.sbox{
+    transition:0.6s;
+
+    color:rgb(201, 119, 201);
+    border: 1px solid white;
+    box-shadow:0px 0px 10px black;
+
+    padding:10px 15px;
+    gap:10px;
+    height:210px;
+    width:210px;
+    border-radius:9px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    
+    background: transparent;
+    
+}
+.sbox #blog{
+    font-size:21px;
+    background:rgb(252, 39, 124);
+    color:white;
+    padding:10px;
+    border-radius:9px;
+    
+}
+.sbox p i{
+    margin-left:9px;
+    margin-top:3px;
+}
+#s{
+    margin:0px 10px;
+}
+
+.sbox:hover{
+    background:linear-gradient(to top,rgb(247, 29, 65),rgb(90, 10, 90));
+    color:whitesmoke;
+}
+/*------------------------ portfolio --------------------*/
+.portfolio{
+    text-align:center;
+    color:rgb(201, 119, 201);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+}
+.portfolio h1{
+    margin:10px  0px;
+}
+.pcon1{
+    width:100%;
+    height:110px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.pcon1 .pc  {
+    width:180px;
+    height:40px;
+    border-radius:50px;
+    border: 1px solid white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0px  0px  10px black;
+    margin:0px  15px;
+    transition:0.5s;
+}
+.pc:hover{
+    background:linear-gradient(to top,rgb(247, 29, 65),rgb(90, 10, 90));
+
+
+}
+.pcontainer{
+    width:100%;
+    height:350px;
+    margin:40px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.6s;
+
+}
+.pbox{
+    transition:0.6s;
+    margin:0px 14px;
+
+    border: 1px solid white;
+    box-shadow:0px 0px 10px black;
+
+    padding:10px 15px;
+    gap:10px;
+    height:210px;
+    width:210px;
+    border-radius:9px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+}
+.pbox .pin{
+    border-radius:9px;
+    background-color: whitesmoke;
+    padding-right:10px;
+    
+    
+    width:97%;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size:16px;
+}
+.pin .info{
+    color:black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:0px 10px;
+
+}
+.pin .icon i{
+    color:black;
+    margin-left:20px;
+}
+.pbox:hover .pin .icon i{
+    color:green;
+}
+#b1{
+    background-repeat: center;
+    background-size: cover;
+    background-image: url('images/pic1.png');
+}
+#b2{
+    background-repeat: center;
+    background-size: cover;
+    background-image: url('images/pic2.jpg');
+}
+#b3{
+    background-repeat: center;
+    background-size: cover;
+    background-image: url('images/pic3.jpeg');
+}
+#b4{
+    background-repeat: center;
+    background-size: cover;
+    background-image: url('images/pic4.jpeg');
+}
+.smore{
+    width:180px;
+    height:40px;
+    border-radius:50px;
+    border: 1px solid white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0px  0px  10px black;
+    margin:0px  15px;
+    transition:0.5s;
+    margin-bottom:20px;
+
+}
+.connect{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    color:rgb(201, 119, 201);
+    margin-top:40px;
+    margin-bottom:40px;
+    text-align: center;
+}
+form{
+    
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    margin:30px 0px;
+}
+input{
+    width:250px;
+    height:40px;
+    margin:15px 10px;
+    border-radius:8px;
+    border: 1px solid white;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.649);
+    background: transparent;
+    padding: 0px 5px;
+
+}
+#txtarea{
+    
+    margin:15px 10px;
+    border-radius:8px;
+    border: 1px solid white;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.649);
+    background: transparent;
+    padding: 5px 5px;
+
+
+}
+.chead{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.connect p i{
+    margin: 0px 5px;
+}
+.footer{
+    color:rgb(201, 119, 201);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 17px;
+    margin-bottom:20px;
+
+}
+.terms{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.terms p{
+    margin:0px 6px;
+
+}
+.btn{
+    margin:  15px 0px;
+    height:40px;
+    width:200px;
+    background-color: aquamarine;
+}
+
+
+
+
+
+/*--------------------media ----------------------- */
+
+@media only screen and (max-width:600px){
+/*----------------------- navbar --------------------*/
+    .links {
+        display:none;
+    }
+    .modes{
+        width:40%;
+    }
+    .modes a{
+        width:100px;
+    }
+    .modes i{
+        margin: 0px 5px;
+    }
+    .modes #bars{
+        display: block;
+    }
+    /*------------------------- about ----------------------*/
+    
+    
+    
+    .rabt{
+        background-color: transparent;
+        height:500vh;
+        width:90%;
+        
+    }
+    .rabt p{
+        
+        margin-bottom: -70px;
+        padding:0px;
+       
+
+    }
+    .rcontainer{
+        margin-top:100px;
+        height:300px;
+        
+        height:400px;
+    }
+    
+    
+    #r{
+        padding:10px 0px;
+        height:200px;
+        font-size:13px;
+        overflow-y: hidden;
+        padding: 0px 10px;
+        
+        width:200px;
+        margin:10px 10px;
+    }
+    /*----------------------- services-----------------*/
+    .services .scontainer{
+        height:1000px;
+    }
+    .scontainer{
+        flex-wrap: wrap;
+    }
+    .sbox{
+        gap:10px;
+    }
+    /*---------------------------- portfolio ------------------*/
+    .pcon1 {
+        flex-wrap: wrap;
+    }
+    .pcontainer{
+        height:1000px;
+        flex-wrap: wrap;
+    }
+    /*---------------------- footer --------------------*/
+    #txtarea{
+        width:300px;
+    }
+    input{
+        width:300px;
+
+
+    }
+
+    
+    
+
+
+    
+    
+    
+
+}
